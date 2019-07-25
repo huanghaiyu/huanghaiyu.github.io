@@ -38,8 +38,11 @@
 <!-- 多说目前已经无法使用，使用gitment评论功能 -->
 {% if site.comment_gitment_repo %}
 <div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<!-- 这里使用别人搭建的服务器，随时都有可能失效 -->
+<!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
+<!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+<link rel="stylesheet" href="https://wzxjayce.github.io/gitment.css">
+<script src="https://wzxjayce.github.io/gitment.js"></script>
 <script>
     var gitment = new Gitment({
 		id: '<%= page.date %>',
