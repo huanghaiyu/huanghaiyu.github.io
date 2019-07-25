@@ -24,8 +24,11 @@ Mutex core有多个（最大支持8个）总线接口来访问core内部资源�
 Mutex core 同时提供一种硬件保护机制，用于mutex访问的硬件防干扰保护，防止除预期的处理器之外的任何处理器修改mutex。这种机制基于HWID实现，HWID由锁定mutex的处理器的AXI接口号和AXI事务ID组成。
 
 注释：以zynq 7000 双核AMP 架构为例，Mutex Core一般有两种使用模式：
-1. cup0 通过一个AXI-Lite总线接口访问Mutex Core, cpu1 通过另一个总线接口访问Mutex Core。
-2. cpu0和cpu1通过同一个AXI-Lite总线接口访问Mutex Core，由AXI 内部连接器仲裁双核的访问。
+1. cpu0和cpu1通过同一个AXI-Lite总线接口访问Mutex Core，由AXI 内部连接器仲裁双核的访问。
+![]({{ "/public/upload/mutex_block_diagram.png" | absolute_url }})
+
+2. cup0 通过一个AXI-Lite总线接口访问Mutex Core, cpu1 通过另一个总线接口访问Mutex Core。
+![]({{ "/public/upload/mutex_block_diagram1.png" | absolute_url }})
 
 # 寄存器空间
 	
