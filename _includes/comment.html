@@ -39,10 +39,8 @@
 {% if site.comment_gitment_repo %}
 <div id="gitmentContainer"></div>
 <!-- 这里使用别人搭建的服务器，随时都有可能失效 -->
-<!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
-<!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
-<link rel="stylesheet" href="https://wzxjayce.github.io/gitment.css">
-<script src="https://wzxjayce.github.io/gitment.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
 <script>
     var gitment = new Gitment({
 		id: '<%= page.date %>',
