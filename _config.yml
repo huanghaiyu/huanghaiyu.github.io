@@ -12,7 +12,7 @@ author: huanghaiyu
 avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
 profile: One sentence introducing yourself.
 #twitter_username: twitter_username
-#github_username:  github_username
+github_username: huanghaiyu
 profile_links:
   Email: "mailto:your_email@example.com"
   GitHub: "https://github.com/huanghaiyu"
@@ -20,8 +20,8 @@ profile_links:
 
 # Comment Service (Disqus or 多说)
 #  choose one and un-comment the line to active it
-disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
-duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
 
 excerpt_separator: <!--more-->
 
@@ -57,3 +57,10 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   math_engine: mathjax
+
+
+
+#gitment
+comment_gitment_repo: huanghaiyu.github.io
+comment_gitment_clientId: d19b1174c9b13bf2062e
+comment_gitment_clientSecret: 5da6e549085ba64938efa3d88cef7dbe40262981
